@@ -6,13 +6,13 @@ import i18nMixin from '@/store/i18n-mixin'
 
 const locales = ['zh-CN', 'en-US']
 const languageLabels = {
-  'zh-CN': '简体中文',
-  'en-US': 'English'
+  'zh-CN': '简体中文'
+  // 'en-US': 'English'
 }
 // eslint-disable-next-line
 const languageIcons = {
-  'zh-CN': '🇨🇳',
-  'en-US': '🇺🇸'
+  'zh-CN': '🇨🇳'
+ // 'en-US': '🇺🇸'
 }
 
 const SelectLang = {
