@@ -65,7 +65,7 @@ export const constantRouterMap = [
       {
         path: 'recover',
         name: 'recover',
-        component: undefined
+        component: () => import(/* webpackChunkName: "user" */ '@/views/user/Recover')
       }
     ]
   },
