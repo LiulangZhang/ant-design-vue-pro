@@ -156,7 +156,6 @@ export default {
       }
     },
     handleCollapse (val) {
-      debugger
       this.collapsed = val
     },
     handleSettingChange ({ type, value }) {

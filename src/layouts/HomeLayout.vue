@@ -18,20 +18,17 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a href="index.html"><img src="images/logo.png" alt="#" /></a>
-                  </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">首页</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="about.html">关于我们</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="wedo.html">what we do </a>
+                    <a class="nav-link" href="wedo.html">联系我们 </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog </a>
+                    <a class="nav-link" href="blog.html">产品介绍 </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -58,9 +55,7 @@ export default {
 </script>
 
 <style scoped>
-
 @import 'bootstrap/dist/css/bootstrap.css';
 @import 'bootstrap/dist/css/bootstrap.min.css';
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
+@import '../../public/css/style.css';
 </style>
