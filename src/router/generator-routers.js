@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import * as loginService from '@/api/login'
 // eslint-disable-next-line
-import { BasicLayout, BlankLayout, PageView, RouteView } from '@/layouts'
+import { BasicLayout, BlankLayout, PageView, RouteView,HomeLayout } from '@/layouts'
 
 // 前端路由表 (基于动态)
 const constantRouterComponents = {
@@ -10,6 +10,7 @@ const constantRouterComponents = {
   BlankLayout: BlankLayout,
   RouteView: RouteView,
   PageView: PageView,
+  HomeLayout: HomeLayout,
   '403': () => import(/* webpackChunkName: "error" */ '@/views/exception/403'),
   '404': () => import(/* webpackChunkName: "error" */ '@/views/exception/404'),
   '500': () => import(/* webpackChunkName: "error" */ '@/views/exception/500'),

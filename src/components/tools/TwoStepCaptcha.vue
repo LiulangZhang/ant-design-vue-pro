@@ -2,7 +2,7 @@
   <!-- 两步验证 -->
   <a-modal
     centered
-    v-model="visible"
+    v-on="visible"
     @cancel="handleCancel"
     :maskClosable="false"
   >

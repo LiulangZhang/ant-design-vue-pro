@@ -3,6 +3,7 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 
 import Vue from 'vue'
+
 import App from './App.vue'
 import router from './router'
 import store from './store/'
@@ -20,6 +21,7 @@ import './core/lazy_use' // use lazy load components
 import './permission' // permission control
 import './utils/filter' // global filter
 import './global.less' // global style
+// import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
 Vue.config.productionTip = false
 
@@ -29,7 +31,8 @@ Vue.use(VueAxios)
 Vue.component('pro-layout', ProLayout)
 Vue.component('page-container', PageHeaderWrapper)
 Vue.component('page-header-wrapper', PageHeaderWrapper)
-
+// Vue.use(BootstrapVue)
+// Vue.use(IconsPlugin)
 window.umi_plugin_ant_themeVar = themePluginConfig.theme
 
 new Vue({

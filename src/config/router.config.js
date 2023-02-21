@@ -1,6 +1,5 @@
 // eslint-disable-next-line
-import { UserLayout, BasicLayout, BlankLayout } from '@/layouts'
-import { bxAnaalyse } from '@/core/icons'
+import { UserLayout, BasicLayout, BlankLayout,HomeLayout } from '@/layouts'
 
 const RouteView = {
   name: 'RouteView',
@@ -63,6 +62,11 @@ export const constantRouterMap = [
         component: () => import(/* webpackChunkName: "user" */ '@/views/user/RegisterResult')
       },
       {
+        path: 'index',
+        name: 'index',
+        component: () => import(/* webpackChunkName: "user" */ '@/views/home/Index')
+      },
+      {
         path: 'recover',
         name: 'recover',
         component: () => import(/* webpackChunkName: "user" */ '@/views/user/Recover')
@@ -70,6 +74,26 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/404',
+    component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
+  }
+]
+
+export const indexRouterMap = [
+  {
+    path: '/home',
+    component: HomeLayout,
+    redirect: '/home/index',
+    hidden: true,
+    children: [
+      {
+        path: 'index',
+        name: 'index',
+        component: () => import(/* webpackChunkName: "user" */ '@/views/home/Index')
+      }
+    ]
+  },
   {
     path: '/404',
     component: () => import(/* webpackChunkName: "fail" */ '@/views/exception/404')
