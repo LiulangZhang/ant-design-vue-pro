@@ -1,4 +1,4 @@
- import router from './router'
+import router from './router'
 // import store from './store'
 import storage from 'store'
 import NProgress from 'nprogress' // progress bar
@@ -10,9 +10,9 @@ import { i18nRender } from '@/locales'
 
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
-const allowList = ['login', 'register', 'registerResult', 'recover', 'index'] // no redirect allowList
+const allowList = ['login', 'register', 'registerResult', 'recover', 'index', 'home-about', 'home-contact'] // no redirect allowList
 const loginRoutePath = '/user/login'
-const defaultRoutePath = '/dashboard/workplace'
+const defaultRoutePath = '/home/index'
 
 router.beforeEach((to, from, next) => {
   NProgress.start() // start progress bar
@@ -61,7 +61,7 @@ router.beforeEach((to, from, next) => {
       //       })
       //     })
       // } else {
-        next()
+      next()
       // }
     }
   } else {

@@ -19,23 +19,21 @@
               <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
+                    <a class="nav-link" @click="toNext('index')">首页</a>
+                  </li>
+                  <li class="nav-item active">
                     <a class="nav-link" href="index.html">首页</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="about.html">关于我们</a>
+                    <a class="nav-link" @click="toNext('home-product')">产品介绍 </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="wedo.html">联系我们 </a>
+                    <a class="nav-link" @click="toNext('home-about')">关于我们</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="blog.html">产品介绍 </a>
+                    <a class="nav-link" @click="toNext('home-contact')">联系我们 </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                  </li>
+                  
                 </ul>
               </div>
             </nav>
@@ -50,12 +48,16 @@
 
 <script>
 export default {
-  name: 'BlankLayout'
-}
+  methods: {
+    toNext (url) {
+      var path = '/home/' + url
+      this.$router.push({ path: path })
+    }
+  }
+  }
 </script>
 
 <style scoped>
 @import 'bootstrap/dist/css/bootstrap.css';
-@import 'bootstrap/dist/css/bootstrap.min.css';
 @import '../../public/css/style.css';
 </style>

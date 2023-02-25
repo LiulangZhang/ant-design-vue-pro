@@ -91,6 +91,16 @@ export const indexRouterMap = [
         path: 'index',
         name: 'index',
         component: () => import(/* webpackChunkName: "user" */ '@/views/home/Index')
+      },
+      {
+        path: 'home-about',
+        name: 'home-about',
+        component: () => import(/* webpackChunkName: "user" */ '@/views/home/About')
+      },
+      {
+        path: 'home-contact',
+        name: 'home-contact',
+        component: () => import(/* webpackChunkName: "user" */ '@/views/home/Contact')
       }
     ]
   },
