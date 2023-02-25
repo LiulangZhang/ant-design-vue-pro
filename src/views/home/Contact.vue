@@ -80,8 +80,14 @@ export default {
               this.requestFailed(err)
             })
           console.log('Received values of form: ', values)
-        } else {
         }
+      })
+    },
+    requestFailed (err) {
+      this.$notification['error']({
+        message: '错误',
+        description: ((err.response || {}).data || {}).message || '请求出现错误，请稍后再试',
+        duration: 4
       })
     }
   }
